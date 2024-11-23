@@ -1,0 +1,49 @@
+.App {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 20px;
+ margin-left: 500px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+h1 {
+  font-size: 2rem;
+  color: #ca2525;
+}
+
+.profile {
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #f9f9f9;
+}
+
+.profile > div {
+  margin-bottom: 15px;
+}
+
+.profile h3 {
+  font-size: 1.2rem;
+  color: #161616;
+}
+
+.profile p {
+  font-size: 1rem;
+  color: #302d2d;
+}
+
+.email, .name, .address, .personal-info {
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #eee;
+  border-radius: 6px;
+}
