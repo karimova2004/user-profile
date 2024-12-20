@@ -131,35 +131,90 @@ nav a.active {
   color: white;
 }
 
-
-
 .timer {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
   text-align: center;
+  background-color: #f7f9fc;
+  border-radius: 15px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: 'Roboto', sans-serif;
+}
+
+.timer h2 {
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  color: #333;
+  letter-spacing: 1px;
 }
 
 .time-display {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 2.5rem;
-  margin: 20px;
   font-weight: bold;
+  color: #007bff;
+  background-color: #e9f5ff;
+  padding: 10px 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.time-display span {
+  margin: 0 5px;
+}
+
+.controls {
+  margin-top: 15px;
 }
 
 .controls button {
   margin: 5px;
-  padding: 10px 20px;
+  padding: 12px 20px;
   font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
   cursor: pointer;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  background-color: #f9f9f9;
-  transition: all 0.2s;
-}
-
-.controls button:hover {
+  transition: all 0.3s ease;
   background-color: #007bff;
   color: white;
 }
 
+.controls button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
 .controls button:disabled {
-  background-color: #ddd;
+  background-color: #ccc;
+  color: #777;
   cursor: not-allowed;
+}
+
+.timer button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-size: 1.1rem;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.timer button:hover {
+  background-color: #218838;
+}
+
+.timer button.pause {
+  background-color: #dc3545;
+}
+
+.timer button.pause:hover {
+  background-color: #c82333;
 }
